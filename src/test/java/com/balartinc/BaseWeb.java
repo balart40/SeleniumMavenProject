@@ -1,3 +1,5 @@
+package com.balartinc;
+
 import com.balartinc.drivers.DriverFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
