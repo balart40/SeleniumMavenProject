@@ -2,10 +2,10 @@ package com.balartinc.onlytestingpage;
 
 import com.balartinc.BaseWeb;
 import com.balartinc.pages.OnlyTestingHomePage;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static com.balartinc.config.ConfigurationManager.configuration;
-import static org.assertj.core.api.Assertions.assertThat;
 
 public class OnlyTestingHomePageTest extends BaseWeb {
 
@@ -18,6 +18,6 @@ public class OnlyTestingHomePageTest extends BaseWeb {
         objHomePage = new OnlyTestingHomePage(driver);
         String expectedTile = "Only Testing";
 
-        assertThat(objHomePage.getTitle().equals(expectedTile));
+        Assertions.assertEquals(objHomePage.getTitle(), expectedTile);
     }
 }
