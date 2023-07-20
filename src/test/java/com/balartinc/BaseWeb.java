@@ -1,6 +1,6 @@
 package com.balartinc;
 
-import com.balartinc.drivers.DriverFactory;
+import com.balartinc.driver.DriverFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;

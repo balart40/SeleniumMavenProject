@@ -1,4 +1,4 @@
-package com.balartinc.drivers;
+package com.balartinc.driver;
 
 public enum BrowserList {
     CHROME,
