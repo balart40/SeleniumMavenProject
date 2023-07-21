@@ -23,5 +23,7 @@ public class OnlyTestingHomePageTest extends BaseWeb {
         String expectedTile = "Only Testing";
 
         Assertions.assertEquals(objHomePage.getTitle(), expectedTile);
+
+        log.info("Test finished successfully...");
     }
 }

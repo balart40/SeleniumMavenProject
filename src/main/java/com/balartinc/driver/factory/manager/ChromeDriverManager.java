@@ -13,12 +13,17 @@ public class ChromeDriverManager implements IDriverManager<ChromeOptions> {
     @Override
     public WebDriver createDriver() {
         WebDriverManager.getInstance(CHROME).setup();
-        return new ChromeDriver();
+
+        return new ChromeDriver(getOptions());
     }
 
     @Override
     public ChromeOptions getOptions() {
         ChromeOptions chromeOptions = new ChromeOptions();
+        //chromeOptions.setBinary("/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome");
+        //chromeOptions.setBinary("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome");
+        //chromeOptions.setBinary("/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome");
+        chromeOptions.setBinary("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome");
         chromeOptions.addArguments("--start-maximized");
         chromeOptions.addArguments("--disable-infobars");
         chromeOptions.addArguments("--disable-notifications");
